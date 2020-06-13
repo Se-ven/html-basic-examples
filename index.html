@@ -7,28 +7,106 @@
     <title>HTML Basics</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <style></style>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        h1 {
+            text-align: center
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        details {
+            margin: 10px;
+        }
+
+        img {
+            resize: vertical, horizontal;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>HTML Basics</h1>
+    <h1>
+        <!--Every good heading needs an underline-->
+        <u>HTML Basics</u>
+    </h1>
 
-    <h2>My Top Three Horn-Loaded Loudspeaker Designs</h2>
+    <h2>A Simple Overview of Hornloaded Loudspeakers</h2>
 
-    <p>Full Range, rear folded:
-        <a href="https://www.diyaudio.com/forums/full-range/264322-help-build-lowther-fun-horn.html">Lowther Fun
-            Horn</a>
-    </p>
+    <!--This (p)aragraph section is the beginning of a body text, in this
+    case just a simple intro.-->
 
-    <p>Three way spherical horns:
-        <a href="https://www.avantgarde-acoustic.de/en/products/trio-series/trio-xd.html">Avantgarde Trio</a>
-    </p>
+    <p> The acoustical amplification of sound has been wielded by humans since antiquity, and
+        with the advent of electrically induced sound reproduction in the midst of the
+        industrial revolution, the whole process of saving sounds and playing them back
+        became a complicated new art-science. From infinite baffle, to direct radiating,
+        to electrostatic panels and even controlled arcs of plasma, there are so many interesting
+        ways to make and remake sound. I tend to favor older designs that rely on the
+        natural laws of acoustics to recreate sound rather than using computational
+        digital magic. Below I picked the three designs that I've known about the longest.</p>
 
-    <p>Two way large Tractrix + W style bass bin:
-        <a href="https://community.klipsch.com/index.php?/topic/182997-an-unofficial-klipsch-jubilee-buyers-guide/">PWK
-            Jubilee</a>
-    </p>
+    <!--This header (3) section is simply a smaller heading, which helps to break up
+    and organize the flow of the page-->
 
+    <h3>Three of my favorite designs:</h3>
+
+    <!--Div wrappers for styling-->
+
+    <div>
+        <p>Full Range, rear folded:
+            <a href="https://www.diyaudio.com/forums/full-range/264322-help-build-lowther-fun-horn.html">Lowther Fun
+                Horn</a>
+        </p>
+        <!--Including a sample image for each of my favorite designs, three externally
+linked images in total. I want to make these images visible on hover in a later commit.-->
+
+        <details>
+            <summary>Lookit!</summary>
+            <img src="https://www.stereo.net.au/forums/uploads/monthly_05_2014/post-103876-0-28765400-1398940099.jpg"
+                alt="Long rectangular box/corner horn full range.">
+        </details>
+    </div>
+
+    <div>
+        <p>Three way spherical horns:
+            <a href="https://www.avantgarde-acoustic.de/en/products/trio-series/trio-xd.html">Avantgarde Trio</a>
+        </p>
+        <!--Including a details button to pull out a photo of each div link item-->
+
+        <details>
+            <!--Summary tags describe the text just to the right of the details
+            arrow.-->
+            <summary>Lookit!</summary>
+            <img src="https://uncrate.com/assets_c/2010/11/avantgarde-trio-classico-thumb-960xauto-10830.jpg" alt="Three spherical horns
+        arranged on a semi-circular scaffold.">
+
+        </details>
+    </div>
+
+    <div>
+        <p>Two way large Tractrix + W style bass bin:
+            <a href="https://community.klipsch.com/index.php?/topic/182997-an-unofficial-klipsch-jubilee-buyers-guide/">PWK
+                Jubilee</a>
+        </p>
+
+        <details>
+            <summary>Lookit!</summary>
+            <img src="https://1.bp.blogspot.com/-RDA2Zo_sVAY/XbGs9HtYcsI/AAAAAAAA22w/sNwivoQhLcoRLrgk5D_6eMhlTv5ZsQpGgCLcBGAsYHQ/s1600/post-12967-0-23860000-1449447498.jpg"
+                alt="Large two way horn, tractrix on top and W bin on bottom.">
+        </details>
+    </div>
+
+    <!--Made a footer, a cheap and cheesy trademark for my coding camp projects.
+    -->
+    <footer>
+        <!--Decided my cheesy, illegally claimed tm needed to be EMPHASIZED!-->
+        <em>HelloWorld™</em>
+    </footer>
 
 </body>
 
