@@ -13,11 +13,69 @@
         }
 
         h1 {
+            margin-bottom: 60px;
             text-align: center
         }
 
-        footer {
+        h2 {
+            margin-bottom: 25px;
             text-align: center;
+        }
+
+        .intro {
+            margin: 20px;
+
+        }
+
+        a {
+            color: blueviolet;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: crimson;
+        }
+
+        li {
+            display: inline-table;
+            list-style: none;
+            text-align: center;
+            width: 50;
+            height: 50;
+            padding: 10px;
+            border: 2px solid blue;
+            background-color: yellow;
+        }
+
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .centerColumn {
+            text-align: center;
+        }
+
+        .cssLink {
+            border-style: dashed;
+            border: 5px;
+            text-align: center;
+            margin-top: 100px;
+
+
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: brown;
+            text-align: center;
+
         }
 
         details {
@@ -36,74 +94,111 @@
         <u>HTML Basics</u>
     </h1>
 
-    <h2>A Simple Overview of Hornloaded Loudspeakers</h2>
+    <h2>Loudspeaker Primer</h2>
 
     <!--This (p)aragraph section is the beginning of a body text, in this
     case just a simple intro.-->
 
-    <p> The acoustical amplification of sound has been wielded by humans since antiquity, and
-        with the advent of electrically induced sound reproduction in the midst of the
-        industrial revolution, the whole process of saving sounds and playing them back
-        became a complicated new art-science. From infinite baffle, to direct radiating,
-        to electrostatic panels and even controlled arcs of plasma, there are so many interesting
-        ways to make and remake sound. I tend to favor older designs that rely on the
-        natural laws of acoustics to recreate sound rather than using computational
-        digital magic. Below I picked the three designs that I've known about the longest.</p>
+    <div class="intro">
+        <p> The acoustical amplification of sound has been wielded by humans since antiquity, and
+            with the advent of electrically induced sound reproduction in the midst of the
+            industrial revolution, the whole process of saving sounds and playing them back
+            became a complicated new art-science. From infinite baffle, to direct radiating,
+            to electrostatic panels and even controlled arcs of plasma, there are so many interesting
+            ways to make and remake sound. I tend to favor older designs that rely on the
+            natural laws of acoustics to recreate sound rather than using computational
+            digital magic. Below I picked the three designs that I've known about the longest.</p>
 
-    <!--This header (3) section is simply a smaller heading, which helps to break up
+    </div>
+
+
+
+
+    <div class="speakerTypes">
+
+        <ul>
+            <li><a href="http://speakerwrap.com/wp-content/uploads/2014/04/speaker_anatomy.gif">Direct Radiating</a>
+            </li>
+
+            <li><a href="https://www.oreilly.com/library/view/consumer-electronics/9789332503304/images/c05f010.png">Horn
+                    Loaded</a></li>
+
+            <li><a href="https://upload.wikimedia.org/wikipedia/commons/8/85/Es_spk.gif">Electrostatic Panel</a></li>
+
+
+
+
+        </ul>
+
+
+    </div>
+
+    <div class="centerColumn">
+        <!--This header (3) section is simply a smaller heading, which helps to break up
     and organize the flow of the page-->
 
-    <h3>Three of my favorite designs:</h3>
+        <h3>Three of my favorite designs:</h3>
 
-    <!--Div wrappers for styling-->
+        <!--Div wrappers for styling-->
 
-    <div>
-        <p>Full Range, rear folded:
-            <a href="https://www.diyaudio.com/forums/full-range/264322-help-build-lowther-fun-horn.html">Lowther Fun
-                Horn</a>
-        </p>
-        <!--Including a sample image for each of my favorite designs, three externally
-linked images in total. I want to make these images visible on hover in a later commit.-->
+        <div>
+            <p>Full Range, rear folded:
+                <a href="https://www.diyaudio.com/forums/full-range/264322-help-build-lowther-fun-horn.html">Lowther Fun
+                    Horn</a>
+            </p>
+            <!--Including a sample image for each of my favorite designs, three externally
+    linked images in total. I want to make these images visible on hover in a later commit.-->
 
-        <details>
-            <summary>Lookit!</summary>
-            <img src="https://www.stereo.net.au/forums/uploads/monthly_05_2014/post-103876-0-28765400-1398940099.jpg"
-                alt="Long rectangular box/corner horn full range.">
-        </details>
+            <details>
+                <summary>Lookit!</summary>
+                <img class="picture"
+                    src="https://www.stereo.net.au/forums/uploads/monthly_05_2014/post-103876-0-28765400-1398940099.jpg"
+                    alt="Long rectangular box/corner horn full range.">
+            </details>
+        </div>
+
+        <div>
+            <p>Three way spherical horns:
+                <a href="https://www.avantgarde-acoustic.de/en/products/trio-series/trio-xd.html">Avantgarde Trio</a>
+            </p>
+            <!--Including a details button to pull out a photo of each div link item-->
+
+            <details>
+                <!--Summary tags describe the text just to the right of the details
+                arrow.-->
+                <summary>Lookit!</summary>
+                <img class="picture"
+                    src="https://uncrate.com/assets_c/2010/11/avantgarde-trio-classico-thumb-960xauto-10830.jpg" alt="Three spherical horns
+            arranged on a semi-circular scaffold.">
+
+            </details>
+        </div>
+
+        <div>
+            <p>Two way large Tractrix + W style bass bin:
+                <a
+                    href="https://community.klipsch.com/index.php?/topic/182997-an-unofficial-klipsch-jubilee-buyers-guide/">PWK
+                    Jubilee</a>
+            </p>
+
+            <details>
+                <summary>Lookit!</summary>
+                <img class="picture"
+                    src="https://1.bp.blogspot.com/-RDA2Zo_sVAY/XbGs9HtYcsI/AAAAAAAA22w/sNwivoQhLcoRLrgk5D_6eMhlTv5ZsQpGgCLcBGAsYHQ/s1600/post-12967-0-23860000-1449447498.jpg"
+                    alt="Large two way horn, tractrix on top and W bin on bottom.">
+            </details>
+        </div>
+
     </div>
 
-    <div>
-        <p>Three way spherical horns:
-            <a href="https://www.avantgarde-acoustic.de/en/products/trio-series/trio-xd.html">Avantgarde Trio</a>
-        </p>
-        <!--Including a details button to pull out a photo of each div link item-->
+    <div class="cssLink">
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps">CSS Basics</a></p>
 
-        <details>
-            <!--Summary tags describe the text just to the right of the details
-            arrow.-->
-            <summary>Lookit!</summary>
-            <img src="https://uncrate.com/assets_c/2010/11/avantgarde-trio-classico-thumb-960xauto-10830.jpg" alt="Three spherical horns
-        arranged on a semi-circular scaffold.">
-
-        </details>
-    </div>
-
-    <div>
-        <p>Two way large Tractrix + W style bass bin:
-            <a href="https://community.klipsch.com/index.php?/topic/182997-an-unofficial-klipsch-jubilee-buyers-guide/">PWK
-                Jubilee</a>
-        </p>
-
-        <details>
-            <summary>Lookit!</summary>
-            <img src="https://1.bp.blogspot.com/-RDA2Zo_sVAY/XbGs9HtYcsI/AAAAAAAA22w/sNwivoQhLcoRLrgk5D_6eMhlTv5ZsQpGgCLcBGAsYHQ/s1600/post-12967-0-23860000-1449447498.jpg"
-                alt="Large two way horn, tractrix on top and W bin on bottom.">
-        </details>
     </div>
 
     <!--Made a footer, a cheap and cheesy trademark for my coding camp projects.
     -->
-    <footer>
+    <footer class="footer">
         <!--Decided my cheesy, illegally claimed tm needed to be EMPHASIZED!-->
         <em>HelloWorld™</em>
     </footer>
